@@ -12,7 +12,7 @@ from rich.tree import Tree
 console = Console(record=True, width=100)
 
 tree = Tree(
-    "🧑🏻‍🦲 [link=https://www.linkedin.com/in/pablo-prietz/]Pablo Prietz",
+    "[link=https://www.linkedin.com/in/pablo-prietz/]Pablo Prietz",
     guide_style="#FC7300",
 )
 maintainer_tree = tree.add("Maintainer of", guide_style="#BFDB38")
@@ -20,9 +20,9 @@ pupil_core_tree = maintainer_tree.add(
     "[link=https://github.com/pupil-labs/pupil]Pupil Core", guide_style="#1F8A70"
 )
 pupil_core = (
-    "👁️  [link=https://github.com/pupil-labs/pye3d-detector]pye3d[/link] - 3d eye state estimator",
+    "👁️ [link=https://github.com/pupil-labs/pye3d-detector]pye3d[/link] - 3d eye state estimator",
     "🎥 [link=https://github.com/pupil-labs/pyuvc]pyuvc[/link] - UVC camera access",
-    "🖥️  [link=https://github.com/pupil-labs/pyglui]pyglui[/link] - OpenGL UI",
+    "🖥️ [link=https://github.com/pupil-labs/pyglui]pyglui[/link] - OpenGL UI",
     "🔗 [link=https://github.com/pupil-labs/ndsi]ndsi[/link] - OpenGL UI",
 )
 for item in pupil_core:
@@ -56,7 +56,7 @@ about = """\
 Professionally, I develop and maintain open source Python desktop software, and help \
 our community to build custom solutions based on it.
 
-In my free time, I enjoy cooking 🧑‍🍳🥘, Yoga 🧘 and to work on my handstand. 🤸\
+In my free time, I enjoy cooking, Yoga, and to work on my handstand.\
 """
 
 panel = Panel.fit(
