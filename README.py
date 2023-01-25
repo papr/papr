@@ -80,4 +80,11 @@ CONSOLE_HTML_FORMAT = """\
 <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace">{code}</pre>
 """
 
-console.save_html("README.md", inline_styles=True, code_format=CONSOLE_HTML_FORMAT)
+args = dict(inline_styles=True, code_format=CONSOLE_HTML_FORMAT)
+file = "README.md"
+
+with open(file, "rt") as readme:
+    current = readme.read()
+
+if current != console.export_html(**args):
+    console.save_html(file, **args)
