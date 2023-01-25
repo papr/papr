@@ -1,6 +1,8 @@
 """
 Based on https://github.com/willmcgugan/willmcgugan/tree/d915069a3f7460fcb8f244ce91a35ac8a53905c3
 Thank you @willmcgugan
+
+Color palette: https://colorhunt.co/palette/00425a1f8a70bfdb38fc7300
 """
 
 from rich import box
@@ -22,8 +24,8 @@ pupil_core_tree = maintainer_tree.add(
 pupil_core = (
     "👁️ [link=https://github.com/pupil-labs/pye3d-detector]pye3d[/link] - 3d eye state estimator",
     "🎥 [link=https://github.com/pupil-labs/pyuvc]pyuvc[/link] - UVC camera access",
-    "🖥️ [link=https://github.com/pupil-labs/pyglui]pyglui[/link] - OpenGL UI",
     "🔗 [link=https://github.com/pupil-labs/ndsi]ndsi[/link] - OpenGL UI",
+    "...",
 )
 for item in pupil_core:
     pupil_core_tree.add(item)
@@ -47,20 +49,23 @@ pupil_invisible_tree.add(
     "[link=https://pupil-invisible-lsl-relay.readthedocs.io/en/stable/]"
     "LabStreamingLayer Relay"
 )
-
-
-# full_stack_tree = tree.add("🔧 Full-stack developer")
-# tree.add("📘 Author")
+maintainer_tree.add("...")
 
 about = """\
-Professionally, I develop and maintain open source Python desktop software, and help \
-our community to build custom solutions based on it.
+I develop and maintain open source Python desktop software since early 2016. \
+Having built a community on [link=https://pupil-labs.com/chat]Discord[/link], I help \
+our users build their custom solutions based on it.
 
-In my free time, I enjoy cooking, Yoga, and to work on my handstand.\
+During my Cognitive Science BSc. in Osnabrück and Computer Science MSc. in Berlin, I \
+got a solid understanding of the wide variety of Machine Learning categories and where \
+to apply them.
+
+In my free time, I enjoy cooking, Yoga, and to work on my handstand. From time to time, \
+you can find me hiking in the mountains.\
 """
 
 panel = Panel.fit(
-    about, box=box.DOUBLE, border_style="#00425A", title="[b]Hi there", width=30
+    about, box=box.DOUBLE, border_style="#00425A", title="[b]Hi there", width=55
 )
 
 console.print(Columns([panel, tree]))
