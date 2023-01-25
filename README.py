@@ -26,7 +26,7 @@ pupil_core = (
     "👁️ [link=https://github.com/pupil-labs/pye3d-detector]pye3d[/link] - 3d eye state estimator",
     "🎥 [link=https://github.com/pupil-labs/pyuvc]pyuvc[/link] - UVC camera access",
     "🔗 [link=https://github.com/pupil-labs/ndsi]ndsi[/link] - Network State\n"
-    "  Synchronization Protocol",
+    "   Synchronization Protocol",
     "...",
 )
 for item in pupil_core:
