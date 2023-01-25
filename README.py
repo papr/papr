@@ -65,7 +65,7 @@ you can find me hiking in the mountains.\
 """
 
 panel = Panel.fit(
-    about, box=box.DOUBLE, border_style="#00425A", title="[b]Hi there", width=55
+    about, box=box.DOUBLE, border_style="#00425A", title="[b]Hi there", width=40
 )
 
 console.print(Columns([panel, tree]))
