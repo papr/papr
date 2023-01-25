@@ -17,6 +17,7 @@ tree = Tree(
     "[link=https://www.linkedin.com/in/pablo-prietz/]Pablo Prietz",
     guide_style="#FC7300",
 )
+tree.add("Expert for head-mounted\nappearance-based eye-tracking")
 maintainer_tree = tree.add("Maintainer of", guide_style="#BFDB38")
 pupil_core_tree = maintainer_tree.add(
     "[link=https://github.com/pupil-labs/pupil]Pupil Core", guide_style="#1F8A70"
@@ -24,7 +25,7 @@ pupil_core_tree = maintainer_tree.add(
 pupil_core = (
     "👁️ [link=https://github.com/pupil-labs/pye3d-detector]pye3d[/link] - 3d eye state estimator",
     "🎥 [link=https://github.com/pupil-labs/pyuvc]pyuvc[/link] - UVC camera access",
-    "🔗 [link=https://github.com/pupil-labs/ndsi]ndsi[/link] - OpenGL UI",
+    "🔗 [link=https://github.com/pupil-labs/ndsi]ndsi[/link] - Network State\n  Synchronization Protocol",
     "...",
 )
 for item in pupil_core:
@@ -51,14 +52,18 @@ pupil_invisible_tree.add(
 )
 maintainer_tree.add("...")
 
+tree.add("🎩🪄📦 Python Packaging Wizard")
+tree.add("Discord Community Moderator")
+tree.add("Student Group Volunteer")
+
 about = """\
 I develop and maintain open source Python desktop software since early 2016. \
 Having built a community on [link=https://pupil-labs.com/chat]Discord[/link], I help \
 our users build their custom solutions based on it.
 
 During my Cognitive Science BSc. in Osnabrück and Computer Science MSc. in Berlin, I \
-got a solid understanding of the wide variety of Machine Learning categories and where \
-to apply them.
+got a solid under- standing of the wide variety of Machine Learning algorithms and \
+categories, and learned when to apply them.
 
 In my free time, I enjoy cooking, Yoga, and to work on my handstand. From time to time, \
 you can find me hiking in the mountains.\
