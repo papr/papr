@@ -17,9 +17,17 @@ tree = Tree(
     "[link=https://www.linkedin.com/in/pablo-prietz/]Pablo Prietz",
     guide_style="#FC7300",
 )
-tree.add("Senior software engineer @ uneos")
+backend_tree = tree.add("Backend experience with", guide_style="#BFDB38")
+backend_tree.add("Domain-driven development")
+backend_tree.add("FastAPI + Pydantic")
+backend_tree.add("SQLAlchemy")
+
+frontend_tree = tree.add("Frontend experience with", guide_style="#BFDB38")
+frontend_tree.add("Vue and its reactivity system")
+frontend_tree.add("Primevue, vue-query, and vee-validate")
+
 tree.add("Expert for head-mounted\nappearance-based eye-tracking")
-maintainer_tree = tree.add("Maintainer of", guide_style="#BFDB38")
+maintainer_tree = tree.add("Previous maintainer of", guide_style="#BFDB38")
 pupil_core_tree = maintainer_tree.add(
     "[link=https://github.com/pupil-labs/pupil]Pupil Core", guide_style="#1F8A70"
 )
@@ -59,15 +67,18 @@ tree.add("Discord Community Moderator")
 tree.add("Student Group Volunteer")
 
 about = """\
-I develop and maintain open source Python desktop software since early 2016. \
-Having built a community on [link=https://pupil-labs.com/chat]Discord[/link], I help \
+Having been the first senior software engineer at [link=https://www.uneos.io/]UNEOS[/link], \
+I shaped the development of our early prototypes and became lead of the core services.
+
+At Pupil Labs, I developed and maintained open source Python desktop software, starting mid 2016. \
+Having built a community on [link=https://pupil-labs.com/chat]Discord[/link], I helped \
 our users build their custom solutions based on it.
 
 During my Cognitive Science BSc. in Osnabrück and Computer Science MSc. in Berlin, I \
 got a solid under- standing of the wide variety of Machine Learning algorithms and \
 categories, and learned when to apply them.
 
-In my free time, I enjoy cooking, Yoga, and to work on my handstand. From time to time, \
+In my free time, I enjoy cooking, Yoga, and to ride my bike. From time to time, \
 you can find me hiking in the mountains.\
 """
 
@@ -84,8 +95,4 @@ CONSOLE_HTML_FORMAT = """\
 args = dict(inline_styles=True, code_format=CONSOLE_HTML_FORMAT)
 file = "README.md"
 
-with open(file, "rt") as readme:
-    current = readme.read()
-
-if current != console.export_html(**args):
-    console.save_html(file, **args)
+console.save_html(file, **args)
