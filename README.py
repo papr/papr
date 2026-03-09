@@ -17,6 +17,7 @@ tree = Tree(
     "[link=https://www.linkedin.com/in/pablo-prietz/]Pablo Prietz",
     guide_style="#FC7300",
 )
+tree.add("Senior software engineer @ uneos")
 tree.add("Expert for head-mounted\nappearance-based eye-tracking")
 maintainer_tree = tree.add("Maintainer of", guide_style="#BFDB38")
 pupil_core_tree = maintainer_tree.add(
