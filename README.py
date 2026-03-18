@@ -17,69 +17,45 @@ tree = Tree(
     "[link=https://www.linkedin.com/in/pablo-prietz/]Pablo Prietz",
     guide_style="#FC7300",
 )
-backend_tree = tree.add("Backend experience with", guide_style="#BFDB38")
-backend_tree.add("Domain-driven development")
-backend_tree.add("FastAPI + Pydantic")
-backend_tree.add("SQLAlchemy")
 
-frontend_tree = tree.add("Frontend experience with", guide_style="#BFDB38")
-frontend_tree.add("Vue and its reactivity system")
-frontend_tree.add("Primevue, vue-query, and vee-validate")
+practices_tree = tree.add("Best practices & knowledge transfer", guide_style="#BFDB38")
+practices_tree.add("Domain-driven development")
+practices_tree.add("Cross-team standards & mentoring")
 
-tree.add("Expert for head-mounted\nappearance-based eye-tracking")
-maintainer_tree = tree.add("Previous maintainer of", guide_style="#BFDB38")
-pupil_core_tree = maintainer_tree.add(
-    "[link=https://github.com/pupil-labs/pupil]Pupil Core", guide_style="#1F8A70"
-)
-pupil_core = (
-    "👁️ [link=https://github.com/pupil-labs/pye3d-detector]pye3d[/link] - 3d eye state estimator",
-    "🎥 [link=https://github.com/pupil-labs/pyuvc]pyuvc[/link] - UVC camera access",
-    "🔗 [link=https://github.com/pupil-labs/ndsi]ndsi[/link] - Network State\n"
-    "Synchronization Protocol",
-    "...",
-)
-for item in pupil_core:
-    pupil_core_tree.add(item)
+backend_tree = tree.add("Backend", guide_style="#BFDB38")
+backend_tree.add("FastAPI + Pydantic + SQLAlchemy")
 
-integrations_tree = pupil_core_tree.add("3rd-party integrations", guide_style="#00425A")
-integrations_tree.add(
-    "[link=https://github.com/labstreaminglayer/App-PupilLabs/]LabStreamingLayer"
-)
-integrations_tree.add(
-    "[link=https://psychopy.org/api/iohub/device/eyetracker_interface/"
-    "PupilLabs_Core_Implementation_Notes.html#pupil-labs-core]PsychoPy"
-)
+frontend_tree = tree.add("Frontend", guide_style="#BFDB38")
+frontend_tree.add("TypeScript + Vue")
 
-pupil_invisible = ()
-pupil_invisible_tree = maintainer_tree.add("Pupil Invisible", guide_style="#1F8A70")
-pupil_invisible_tree.add(
-    "[link=https://pupil-labs-realtime-api.readthedocs.io/en/latest/]"
-    "REST+RTSP Realtime API"
+oss_tree = tree.add("Previous maintainer of", guide_style="#BFDB38")
+oss_tree.add(
+    "[link=https://github.com/pupil-labs/pupil]Pupil Core[/link] - open-source\n"
+    "eye-tracking platform (1.7k ⭐)",
+    guide_style="#1F8A70",
 )
-pupil_invisible_tree.add(
-    "[link=https://pupil-invisible-lsl-relay.readthedocs.io/en/stable/]"
-    "LabStreamingLayer Relay"
+oss_tree.add(
+    "[link=https://github.com/pupil-labs/pl-realtime-api]pl-realtime-api[/link] -\n"
+    "async real-time eye-tracking client",
+    guide_style="#1F8A70",
 )
-maintainer_tree.add("...")
 
 tree.add("🎩🪄📦 Python Packaging Wizard")
-tree.add("Discord Community Moderator")
-tree.add("Student Group Volunteer")
 
 about = """\
-Having been the first senior software engineer at [link=https://www.uneos.io/]UNEOS[/link], \
-I shaped the development of our early prototypes and became lead of the core services.
+Senior software engineer with a decade of \
+experience across open-source tooling, \
+real-time systems, and full-stack web \
+development. Passionate about establishing \
+best practices, mentoring teams, and \
+driving knowledge transfer.
 
-At Pupil Labs, I developed and maintained open source Python desktop software, starting mid 2016. \
-Having built a community on [link=https://pupil-labs.com/chat]Discord[/link], I helped \
-our users build their custom solutions based on it.
-
-During my Cognitive Science BSc. in Osnabrück and Computer Science MSc. in Berlin, I \
-got a solid under- standing of the wide variety of Machine Learning algorithms and \
-categories, and learned when to apply them.
-
-In my free time, I enjoy cooking, Yoga, and to ride my bike. From time to time, \
-you can find me hiking in the mountains.\
+Currently building domain-driven SaaS systems at \
+[link=https://www.uneos.io/]UNEOS[/link].
+Previously maintained \
+[link=https://github.com/pupil-labs/pupil]\
+Pupil Core[/link], an \
+open-source eye-tracking platform.\
 """
 
 panel = Panel.fit(
